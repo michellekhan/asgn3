@@ -8,5 +8,19 @@ body {
     margin: auto;
     width: 50%;
     padding: 10px;
-} 
-mark {color: #98fb98}
+}
+h1{
+  font-size: 50px;}
+h2{
+  font-size: 35px;}
+p{
+  font-size: 20px;}
+mark{
+  background-color: #98fb98;}
+var{
+  color: #0000ff;
+  font-style: italic;}
+sup{
+  color: #ff0000;}
+footer p:hover{
+color:#ff0000;}
