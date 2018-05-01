@@ -18,89 +18,128 @@
                      Font-Style: Pacifico;
                      Font-size:100px;
                      text-align:center;
-                     margin-Top:-10px;
-                     background-color:#bd5386;
+                    margin-top: -10px;
+                     
                      color:#47072f;
-                     border: 10px solid #ddd45a;    
-                     left:200%; right: 200%;   
+                      
+                     
                      }
-                .Imagination {
-                      font-family: cursive;
-                      font-style: pacifico;
-                      padding:20px 20px 20px 20px;
-                       font-weight: bold;
-                       color: #4400ff;
-                    left:20px; 
-                    top:10px;
-                    background-color:#bd5386;
-                    border: 10px solid #ddd45a;    
-                     left:100%; right: 100%; 
-                     font-size: 50px;
-                     margin: auto;
-                
-    width: 50%;
-    padding: 10px;}
-
+               
                 .Live {
                       font-style: pacifico;
                       padding:20px 20px 20px 20px;
                        font-weight: bold;
-                       color: #4400ff;
+                       color: #47072f;
                     left:20px; 
                     top:10px;
                     background-color:#bd5386;
-                    border: 10px solid #ddd45a;    
+                    border: 5px solid #ddd45a;    
                      left:100%; right: 100%; 
                      font-size: 50px;
-                     font-family:cursive;
-                     margin: auto;
+                    margin: auto;
+                    margin-bottom: 10px;
     width: 50%;
     padding: 10px;}
-   
-    /* visited link */
-a:visited {
-    color: blue;
+
+* {
+    box-sizing: border-box;
+}   
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #a46baa;
+    border: 5px solid;   
+    left:200px; right: 200px; 
+    padding: 10px;
+width: 100%;
+margin-top:-68px;
+margin-bottom: 10px;
 }
 
-/* mouse over link */
-a:hover {
-    color: hotpink;
-}
-
-/* selected link */
-a:active {
-    color: blue;
-}         
-              #free { float: top;}
-              .nav {
-    background-color: #da9ebb; 
-    padding: 15px;
-    list-style-type: none;
-    text-align: center;
-}
-
-.nav li {
-    display: inline-block;
+/* Style the topnav links */
+.topnav a {
     font-size: 25px;
-    padding-left: 20px;
-    padding-right: 20px; 
+    display: table-cell;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: georgia;
+    text-transform: capitalize; 
+    float: right;  
 }
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: rgb(233, 149, 149);
+    color:#6f6470;
+}      
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+    width: 25%;
+    font-size: 20px;
+    font-style: georgia;
+    margin-top: -400px;
+    color: purple; 
+}
+
+/* Middle column */
+.column.middle {
+    width: 50%;
+    font-size: 25px;
+    font-style: georgia;
+    margin-left: 305px;
+    
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: left;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+
+
           </style>
       </head>
           <body>
-                 <div id="free"><img src="dog.png" alt="Free"/></div>
-                   <h1 class="Vision">VISION</h1>
-                   <p class="Imagination">Imagin The Future</p>
-                <p style="text-align: center; color: black; font-size: 25px"> Architecture Artists create their masterpiece by picturing it first. They see what others do not know the detail and that is why their work is unique. Therefore, we should imagine our future that way we want it to be. Because of we the only one that can control our imagination, we should able to draw its outcome. see what other does not see of the detail and that is why their work is unique.</style></p>
-                   <p class="Live">Insperation</p>
-                   <p style type="text-align:center"></p>
-                   <img src="bg6.jpg">
-              <p Style="text-align: center; color: black; font-size: 25px">The individual characteristic is unique because of the ability to make inspiration comes to life by following their dreams.</style></p>
-              <ul class="nav">
-  <li><a href="../asgn3/failures.html">FAILURES</a></li>
-  <li><a href="../asgn3/doit.html">DO IT</a></li>
-  </ul>
-                   <p><a href="../asgn3/index.html"><img src="home.png" alt="home" height="50" width="50"></a></p>
+                 <div id="free"><img src="dog.png" alt="dog"/></div>
+                  
+                 <h1 class="Vision">VISION</h1>
+                 <div class="topnav">
+                     <a href="../asgn3/failures.html">FAILURES</a>
+                     <a href="../asgn3/doit.html">JUST DO IT</a>
+                        
+                     </div>
+                     <p class="Live">Insperation</p>
+                     <img src="bg6.jpg" alt="thinking">
+                     <div class="row">                   
+  <div class="column side">
+       <h1>It's all about You</h1> 
+       <p>Find your inner self<br>
+Picture the life you want to have<br>
+Expect the unexpected because it is part of living<br>
+It is normal to be unique, after all, you are man-made and not industrialize</p></div>
+
+<div class="column middle">
+<p>The ultimate challenge about life is looking for something that is not missing. Instead of accepting what you are and embrace yourself to be the best you could be, people tend to look for something that does not exist.</p></div>
+                              
+ <div class="column side"> 
+     <h1>It's not about Them</h1>
+     <p>We all sometimes feel like a failure; in fact, we are not alone. Actually, it is up to the people who handle the situations well or not. Some would seek help and others would hide and stress about it. So which one are you? </div>
+    </div>               
+<p style="text-align: center"> <a href="../asgn3/index.html"><img src="home.png" alt="home" height="50" width="50"></a></p></style>
                     
           </body>
           </html>

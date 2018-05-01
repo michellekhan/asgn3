@@ -12,7 +12,7 @@
               color:#363036;
               Font-weight:regular;
               text-align:left;
-              font-family: cursive;
+              
               position: static;
                   padding:20px 20px 20px 20px;}
                   h1 {
@@ -42,15 +42,16 @@
     border: 5px solid #73AD21;
     padding: 10px;
     background-color: #6e93ca;
+
 }   
                 .Imagination {
                      
-                    margin: auto;
+            margin: auto;
                     width: 60%;
                     border: 5px solid #73AD21;
                     padding: 10px;
-                    background-color: #6e93ca;
-                    font-family:cursive;
+                    
+                    
                     font-size:25px;
                     background:url(bgpink1.jpg);
                     background-repeat:no-repeat; 
@@ -59,7 +60,7 @@
                     text-align: center;
                     text-transform: capitalize;
                     font-style: georgia;
-                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    
                      }
      
 /* Style the top navigation bar */
@@ -81,7 +82,7 @@ width: 100%;
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: georgia;
-    text-transform: capitalize;   
+    float: right;  
 }
 
 /* Change color on hover */
@@ -95,10 +96,52 @@ width: 100%;
     width: 100%;
     left:200px; right: 200px;
     padding: 20px 20px 20px 20px;
+    font-family: cursive;
 }    
-p  {text-indent: 50px;
-   font-size: 20px; color: black;}  
+
+   /* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+    width: 25%;
+    font-size: 30px;
+    font-style: georgia;
+    font-family: cursive;
+    margin-top: 300px;
+    color: blue;
+    text-align: center;
+    font-weight: bold;
+    padding-right: 40px;
+}
+
+/* Middle column */
+.column.middle {
+    width: 50%;
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: -300%;
+    
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
    
+   
+    
           </style>
       </head>
           <body>
@@ -107,16 +150,22 @@ p  {text-indent: 50px;
                    <p></p>   
                    <div class="fakeimg" style="height:480px; font-size: 20px"><h2>Abraham Lincoln (February 12, 1809 – April 15, 1865)</h2> <p>No one born to be successful but everyone born to discover. Even the 16th President of the United States, Abraham Lincoln, was many failures before he became the leader of the free world. Therefore, failures are just another discoveries.</p></div>
                    <div class="topnav">
-                   <a href="https://ggia.berkeley.edu/practice/mindful_breathing">Mindful Breathing</a>
-                    <a href="http://www.med.navy.mil/sites/nmcphc/health-promotion/psychological-emotional-wellbeing/relax-relax/pages/index.html">RelaxRelax</a>
-                    <a href="https://www.prevention.com/mind-body/emotional-health/13-healthy-foods-that-reduce-stress-and-depression">Cure It With Food</a>
-                  <a href="../asgn3/doit.html"> Just Do It</a>
+                   <a href="https://ggia.berkeley.edu/practice/mindful_breathing">MINDFUL BREATHING</a>
+                    <a href="http://www.med.navy.mil/sites/nmcphc/health-promotion/psychological-emotional-wellbeing/relax-relax/pages/index.html">RELAX</a>
+                    <a href="https://www.prevention.com/mind-body/emotional-health/13-healthy-foods-that-reduce-stress-and-depression">CURE IT WITH FOOD</a>
+                 
                 </div>
-                  <p style="font-size:25px; float: left">  It is undeniable that asking for help is a sign of weakness for some viewers; however, asking for help is the first step to success. There are many different types of support in the matters; for example, if you ever feel stress and need to find your way back, just breath. Indeed, breathing with a style call Mindful Breathing. All it takes is Five minutes, and you will be free from stress. Keep in mind that practice makes it perfect. It might take more than a few times, and the result is stressfree.</p>
-                   
-                   <p style="text-align:center"><img src=" mendigging.jpg"/></p>
-                   <p class="Imagination">It depends on you who you want to be. </p>
+                <div class="row">
+                        <div class="column side">One keeps pushing toward and doesn't know when to stop
+                        </div>  
+
+                    <div class="column middle"><h1>There Is Two Type Of People</h1><p>It is a long journey to success and we all know it, but there are helps out to ease the transition. If you have 5 minutes, check out the links above. You will thank yourself afterward.
+</p></div>
+                    <div class="column side">One gives just enough to pass by and wish for the best</div>
+                    </div>
+                   <p style="text-align: center; top: -150px; position: relative"><img src="mendigging.jpg" width="500" height="400"></p></style>
+                   <p style="text-align: center; top: -150px;position:relative; font-size: 35px; font-style: georgia; color: purple; font-weight: bold">It depends on you who you want to be. </p></style>
                   
-                   <p style="text-align: center"><a href="../asgn3/index.html"><img src="home.png" alt="home" height="50" width="50"></a></style></p>
+                   <p style="text-align: center; top: -150px; position: relative"><a href="../asgn3/index.html"><img src="home.png" alt="home" height="50" width="50"></a></style></p>
           </body>
           </html>
